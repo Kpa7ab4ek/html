@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объект Компьютер</title>
+    <script>
+        function displayComputerProperties() {
+            const computer = {
+                model: "Макбук М1",
+                manufacturer: "Эпл",
+                price: "100 рублей"
+            };
+            const propertiesText = `Модель: ${computer.model}, Производитель: ${computer.manufacturer}, Цена: ${computer.price}`;
+
+            document.getElementById('output').textContent = propertiesText;
+        }
+    </script>
+</head>
+<body>
+    <p>Нажмите кнопку для вывода свойств объекта Компьютер.</p>
+    <button onclick="displayComputerProperties()">Показать свойства</button>
+    <p id="output"></p>
+</body>
+</html>
